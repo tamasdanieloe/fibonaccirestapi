@@ -8,15 +8,33 @@ import org.junit.jupiter.api.TestInstance
 class FibonacciServiceTest {
 
     private val underTest = FibonacciService()
+
+
+
+
     @Test
-    fun shouldReturn0WhenCall1() {
+    fun shouldReturn5WhenCall5(){
         // given
 
         // when
-        val result: Int = underTest.fibonacci(1)
+        val result: Int = underTest.fibonacci(5)
         // then
-        Assertions.assertEquals(0, result)
+        Assertions.assertEquals(5, result)
     }
 
-    // TODO - Test with greater numbers and test edge cases
+    @Test
+    fun shouldReturn3WhenCall2(){
+        // given
+
+        // when
+        val result: Int = underTest.fibonacci(2)
+        // then
+        Assertions.assertEquals(3, result)
+    }
+
+
+
+
+
+
 }
